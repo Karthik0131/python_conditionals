@@ -1,0 +1,32 @@
+{
+    "data":[
+        {
+            "input": "Python 3.2",
+            "output": {
+                "Letters": 6,
+                "Digits": 2
+            }
+        },
+        {
+            "input": "Hello World 123",
+            "output": {
+                "Letters": 10,
+                "Digits": 3
+            }
+        },
+        {
+            "input": "ABC123XYZ789",
+            "output": {
+                "Letters": 6,
+                "Digits": 6
+            }
+        },
+        {
+            "input": "1234567890",
+            "output": {
+                "Letters": 0,
+                "Digits": 10
+            }
+        }
+    ]
+}

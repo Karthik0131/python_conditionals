@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Generate 2D Array</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+        background-color: #f2f2f2;
+    }
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+        color: #333;
+        text-align: center;
+    }
+    p {
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
+    .code {
+        background-color: #f9f9f9;
+        padding: 10px;
+        border-radius: 5px;
+        overflow-x: auto;
+    }
+    .test-case {
+        margin-bottom: 10px;
+    }
+    .input {
+        font-weight: bold;
+        color: #007bff;
+    }
+    .output {
+        font-weight: bold;
+        color: #28a745;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>Generate 2D Array</h1>
+    <p>
+        Write a Python program that takes two digits m (row) and n (column) as input and generates a two-dimensional array. The element value in the i-th row and j-th column of the array should be i*j.
+    </p>
+    <div class="code">
+        <pre>
+# Prompt the user to input the number of rows
+row_num = int(input("Input number of rows: "))
+
+# Prompt the user to input the number of columns
+col_num = int(input("Input number of columns: "))
+
+# Create a 2D list (a list of lists) filled with zeros using list comprehension
+# The outer list will have 'row_num' elements and the inner lists will have 'col_num' elements
+multi_list = [[0 for col in range(col_num)] for row in range(row_num)]
+
+# Nested loop to populate the 2D list with multiplication results
+for row in range(row_num):
+    for col in range(col_num):
+        # Set the value at position [row][col] in the 2D list to the product of 'row' and 'col'
+        multi_list[row][col] = row * col
+
+# Print the resulting 2D list containing the multiplication table
+print(multi_list)
+        </pre>
+    </div>
+    <h2>Sample Test Cases:</h2>
+    <!-- Placeholder for test cases -->
+</div>
+</body>
+</html>

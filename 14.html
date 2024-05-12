@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Count Digits and Letters</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+        background-color: #f2f2f2;
+    }
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+        color: #333;
+        text-align: center;
+    }
+    p {
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
+    .code {
+        background-color: #f9f9f9;
+        padding: 10px;
+        border-radius: 5px;
+        overflow-x: auto;
+    }
+    .test-case {
+        margin-bottom: 10px;
+    }
+    .input {
+        font-weight: bold;
+        color: #007bff;
+    }
+    .output {
+        font-weight: bold;
+        color: #28a745;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>Count Digits and Letters</h1>
+    <p>
+        Write a Python program that accepts a string and calculates the number of digits and letters.
+    </p>
+    <div class="code">
+        <pre>
+# Prompt the user to input a string and store it in the variable 's'
+s = input("Input a string")
+
+# Initialize variables 'd' (for counting digits) and 'l' (for counting letters) with values 0
+d = l = 0
+
+# Iterate through each character 'c' in the input string 's'
+for c in s:
+    # Check if the current character 'c' is a digit
+    if c.isdigit():
+        # If 'c' is a digit, increment the count of digits ('d')
+        d = d + 1
+    # Check if the current character 'c' is an alphabet letter
+    elif c.isalpha():
+        # If 'c' is an alphabet letter, increment the count of letters ('l')
+        l = l + 1
+    else:
+        # If 'c' is neither a digit nor an alphabet letter, do nothing ('pass')
+        pass
+
+# Print the total count of letters ('l') and digits ('d') in the input string 's'
+print("Letters", l)
+print("Digits", d)
+        </pre>
+    </div>
+    <h2>Sample Test Cases:</h2>
+    <!-- Placeholder for test cases -->
+</div>
+</body>
+</html>

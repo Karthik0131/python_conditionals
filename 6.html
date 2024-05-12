@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Counting Even and Odd Numbers</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+        background-color: #f2f2f2;
+    }
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+        color: #333;
+        text-align: center;
+    }
+    p {
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
+    .code {
+        background-color: #f9f9f9;
+        padding: 10px;
+        border-radius: 5px;
+        overflow-x: auto;
+    }
+    .test-case {
+        margin-bottom: 10px;
+    }
+    .input {
+        font-weight: bold;
+        color: #007bff;
+    }
+    .output {
+        font-weight: bold;
+        color: #28a745;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>Counting Even and Odd Numbers</h1>
+    <p>
+        Write a Python program to count the number of even and odd numbers in a series of numbers.
+    </p>
+    <div class="code">
+        <pre>
+# Create a tuple named 'numbers' containing integer values from 1 to 9
+numbers = (1, 2, 3, 4, 5, 6, 7, 8, 9)
+
+# Initialize counters for counting odd and even numbers
+count_odd = 0
+count_even = 0
+# Iterate through each element 'x' in the tuple 'numbers'
+for x in numbers:
+    # Check if the current number 'x' is even by evaluating 'not x % 2'
+    if not x % 2:  # If 'x' modulo 2 equals 0, it's even
+        # Increment the count of even numbers
+        count_even += 1
+    else:
+        # If 'x' modulo 2 doesn't equal 0, it's odd; increment the count of odd numbers
+        count_odd += 1
+
+# Print the total count of even and odd numbers
+print("Number of even numbers:", count_even)
+print("Number of odd numbers:", count_odd)
+        </pre>
+    </div>
+    <h2>Sample Test Cases:</h2>
+    <div class="test-case">
+        <p class="input">Input: (1, 2, 3, 4, 5, 6, 7, 8, 9)</p>
+        <p class="output">Output: Number of even numbers: 4, Number of odd numbers: 5</p>
+    </div>
+    <!-- Placeholder for additional test cases -->
+</div>
+</body>
+</html>

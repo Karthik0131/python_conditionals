@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Triangle Type Checker</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+        background-color: #f2f2f2;
+    }
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+        color: #333;
+        text-align: center;
+    }
+    p {
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
+    .code {
+        background-color: #f9f9f9;
+        padding: 10px;
+        border-radius: 5px;
+        overflow-x: auto;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>Triangle Type Checker</h1>
+    <p>
+        Write a Python program to check if a triangle is equilateral, isosceles, or scalene.
+    </p>
+    <div class="code">
+        <pre>
+# Display a message prompting the user to input lengths of the sides of a triangle
+print("Input lengths of the triangle sides: ")
+
+# Request input from the user for the length of side 'x' and convert it to an integer
+x = int(input("x: "))
+
+# Request input from the user for the length of side 'y' and convert it to an integer
+y = int(input("y: "))
+
+# Request input from the user for the length of side 'z' and convert it to an integer
+z = int(input("z: "))
+
+# Check conditions to determine the type of triangle based on the lengths of its sides
+
+# If all sides are equal, display that it's an equilateral triangle
+if x == y == z:
+    print("Equilateral triangle")
+# If at least two sides are equal, display that it's an isosceles triangle
+elif x == y or y == z or z == x:
+    print("Isosceles triangle")
+# If all sides have different lengths, display that it's a scalene triangle
+else:
+    print("Scalene triangle")
+        </pre>
+    </div>
+</div>
+</body>
+</html>

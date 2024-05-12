@@ -1,0 +1,20 @@
+{
+    "data":[
+        {
+            "input": "Hello\nWorld\n\n",
+            "output": "hello\nworld\n"
+        },
+        {
+            "input": "This is\nA\nTest\n\n",
+            "output": "this is\na\ntest\n"
+        },
+        {
+            "input": "LOWER\nUPPER\nMIXed\n\n",
+            "output": "lower\nupper\nmixed\n"
+        },
+        {
+            "input": "1234\nABCD\n\n",
+            "output": "1234\nabcd\n"
+        }
+    ]
+}

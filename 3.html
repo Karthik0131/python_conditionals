@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Number Guessing Game</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+        background-color: #f2f2f2;
+    }
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+        color: #333;
+        text-align: center;
+    }
+    p {
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
+    .code {
+        background-color: #f9f9f9;
+        padding: 10px;
+        border-radius: 5px;
+        overflow-x: auto;
+    }
+    .test-case {
+        margin-bottom: 10px;
+    }
+    .input {
+        font-weight: bold;
+        color: #007bff;
+    }
+    .output {
+        font-weight: bold;
+        color: #28a745;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>Number Guessing Game</h1>
+    <p>
+        Write a Python program to guess a number between 1 and 9.
+        The user is prompted to enter a guess. If the user guesses wrong, the prompt appears again until the guess is correct.
+        On successful guess, the user will get a "Well guessed!" message, and the program will exit.
+    </p>
+    <div class="code">
+        <pre>
+# Import the 'random' module to generate random numbers
+import random
+
+# Generate a random number between 1 and 10 (inclusive) as the target number
+target_num, guess_num = random.randint(1, 10), 0
+
+# Start a loop that continues until the guessed number matches the target number
+while target_num != guess_num:
+    # Prompt the user to input a number between 1 and 10 and convert it to an integer
+    guess_num = int(input('Guess a number between 1 and 10 until you get it right : '))
+# Print a message indicating successful guessing once the correct number is guessed
+print('Well guessed!')
+        </pre>
+    </div>
+    <h2>Sample Test Cases:</h2>
+    <div class="test-case">
+        <p class="input">Input: 5 (User guesses 5)</p>
+        <p class="output">Output: Well guessed!</p>
+    </div>
+    <!-- Placeholder for additional test cases -->
+</div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+{
+    "data":[
+        {
+            "input": "60°C",
+            "output": "140 in Fahrenheit"
+        },
+        {
+            "input": "45°F",
+            "output": "7 in Celsius"
+        },
+        {
+            "input": "100°C",
+            "output": "212 in Fahrenheit"
+        },
+        {
+            "input": "32°F",
+            "output": "0 in Celsius"
+        },
+        {
+            "input": "0°C",
+            "output": "32 in Fahrenheit"
+        },
+        {
+            "input": "-40°C",
+            "output": "-40 in Fahrenheit"
+        },
+        {
+            "input": "-40°F",
+            "output": "-40 in Celsius"
+        }
+    ]
+}

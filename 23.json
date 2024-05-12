@@ -1,0 +1,20 @@
+{
+    "data": [
+        {
+            "input": {"year": 2016, "month": 8, "day": 23},
+            "output": "The next date is [yyyy-mm-dd] 2016-8-24."
+        },
+        {
+            "input": {"year": 2022, "month": 12, "day": 31},
+            "output": "The next date is [yyyy-mm-dd] 2023-1-1."
+        },
+        {
+            "input": {"year": 2000, "month": 2, "day": 28},
+            "output": "The next date is [yyyy-mm-dd] 2000-2-29."
+        },
+        {
+            "input": {"year": 2001, "month": 2, "day": 28},
+            "output": "The next date is [yyyy-mm-dd] 2001-3-1."
+        }
+    ]
+}

@@ -1,0 +1,20 @@
+{
+    "data":[
+        {
+            "input": "[1452, 11.23, 1+2j, True, 'w3resource', (0, -1), [5, 12], {'class': 'V', 'section': 'A'}]",
+            "output": "Type of 1452 is &lt;class 'int'&gt;, Type of 11.23 is &lt;class 'float'&gt;, Type of (1+2j) is &lt;class 'complex'&gt;, Type of True is &lt;class 'bool'&gt;, Type of w3resource is &lt;class 'str'&gt;, Type of (0, -1) is &lt;class 'tuple'&gt;, Type of [5, 12] is &lt;class 'list'&gt;, Type of {'class': 'V', 'section': 'A'} is &lt;class 'dict'&gt;"
+        },
+        {
+            "input": "[1, 2, 3]",
+            "output": "Type of 1 is &lt;class 'int'&gt;, Type of 2 is &lt;class 'int'&gt;, Type of 3 is &lt;class 'int'&gt;"
+        },
+        {
+            "input": "[1.5, 2.5, 3.5]",
+            "output": "Type of 1.5 is &lt;class 'float'&gt;, Type of 2.5 is &lt;class 'float'&gt;, Type of 3.5 is &lt;class 'float'&gt;"
+        },
+        {
+            "input": "[1+2j, 2+3j, 3+4j]",
+            "output": "Type of (1+2j) is &lt;class 'complex'&gt;, Type of (2+3j) is &lt;class 'complex'&gt;, Type of (3+4j) is &lt;class 'complex'&gt;"
+        }
+    ]
+}

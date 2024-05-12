@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Printing Item Types</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+        background-color: #f2f2f2;
+    }
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+        color: #333;
+        text-align: center;
+    }
+    p {
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
+    .code {
+        background-color: #f9f9f9;
+        padding: 10px;
+        border-radius: 5px;
+        overflow-x: auto;
+    }
+    .test-case {
+        margin-bottom: 10px;
+    }
+    .input {
+        font-weight: bold;
+        color: #007bff;
+    }
+    .output {
+        font-weight: bold;
+        color: #28a745;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>Printing Item Types</h1>
+    <p>
+        Write a Python program that prints each item and its corresponding type from the given list.
+    </p>
+    <div class="code">
+        <pre>
+# Create a list named 'datalist' containing various data types (int, float, complex, bool, string, tuple, list, dictionary)
+datalist = [1452, 11.23, 1+2j, True, 'w3resource', (0, -1), [5, 12], {"class": 'V', "section": 'A'}]
+
+# Iterate through each item in the 'datalist'
+for item in datalist:
+    # Print the type of each item in the list along with the item itself
+    print("Type of", item, "is", type(item)) 
+        </pre>
+    </div>
+    <h2>Sample Test Cases:</h2>
+    <div class="test-case">
+        <p class="input">Input: [1452, 11.23, 1+2j, True, 'w3resource', (0, -1), [5, 12], {"class": 'V', "section": 'A'}]</p>
+        <p class="output">Output: Type of 1452 is &lt;class 'int'&gt;, Type of 11.23 is &lt;class 'float'&gt;, Type of (1+2j) is &lt;class 'complex'&gt;, Type of True is &lt;class 'bool'&gt;, Type of w3resource is &lt;class 'str'&gt;, Type of (0, -1) is &lt;class 'tuple'&gt;, Type of [5, 12] is &lt;class 'list'&gt;, Type of {'class': 'V', 'section': 'A'} is &lt;class 'dict'&gt;</p>
+    </div>
+    <!-- Placeholder for additional test cases -->
+</div>
+</body>
+</html>

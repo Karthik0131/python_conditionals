@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Month Name to Number of Days Converter</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+        background-color: #f2f2f2;
+    }
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+        color: #333;
+        text-align: center;
+    }
+    p {
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
+    .code {
+        background-color: #f9f9f9;
+        padding: 10px;
+        border-radius: 5px;
+        overflow-x: auto;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>Month Name to Number of Days Converter</h1>
+    <p>
+        Write a Python program to convert a month name to a number of days.
+    </p>
+    <div class="code">
+        <pre>
+# Display a list of months to the user
+print("List of months: January, February, March, April, May, June, July, August, September, October, November, December")
+
+# Request input from the user to enter the name of a month and assign it to the variable 'month_name'
+month_name = input("Input the name of Month: ")
+
+# Check the input 'month_name' and provide the number of days based on the entered month
+if month_name == "February":
+    print("No. of days: 28/29 days")  # Display the number of days in February (28 or 29 days for leap years)
+elif month_name in ("April", "June", "September", "November"):
+    print("No. of days: 30 days")  # Display the number of days for months having 30 days
+elif month_name in ("January", "March", "May", "July", "August", "October", "December"):
+    print("No. of days: 31 days")  # Display the number of days for months having 31 days
+else:
+    print("Wrong month name")  # If the entered month name doesn't match any of the above conditions, display an error message
+        </pre>
+    </div>
+</div>
+</body>
+</html>

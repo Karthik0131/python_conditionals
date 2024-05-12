@@ -1,0 +1,24 @@
+{
+    "data": [
+        {
+            "input": {"x": 6, "y": 6, "z": 6},
+            "output": "Equilateral triangle"
+        },
+        {
+            "input": {"x": 5, "y": 5, "z": 8},
+            "output": "Isosceles triangle"
+        },
+        {
+            "input": {"x": 3, "y": 4, "z": 5},
+            "output": "Scalene triangle"
+        },
+        {
+            "input": {"x": 7, "y": 7, "z": 7},
+            "output": "Equilateral triangle"
+        },
+        {
+            "input": {"x": 5, "y": 5, "z": 9},
+            "output": "Isosceles triangle"
+        }
+    ]
+}

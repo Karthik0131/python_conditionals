@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Divisible by 7 and Multiples of 5</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+        background-color: #f2f2f2;
+    }
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+        color: #333;
+        text-align: center;
+    }
+    p {
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
+    .code {
+        background-color: #f9f9f9;
+        padding: 10px;
+        border-radius: 5px;
+        overflow-x: auto;
+    }
+    .test-case {
+        margin-bottom: 10px;
+    }
+    .input {
+        font-weight: bold;
+        color: #007bff;
+    }
+    .output {
+        font-weight: bold;
+        color: #28a745;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>Divisible by 7 and Multiples of 5</h1>
+    <p>
+        Write a Python program to find those numbers which are divisible by 7 and multiples of 5, between 1500 and 2700 (both included).
+    </p>
+    <div class="code">
+        <pre>
+# Create an empty list to store numbers that meet the given conditions
+nl = []
+# Iterate through numbers from 1500 to 2700 (inclusive)
+for x in range(1500, 2701):
+    # Check if the number is divisible by 7 and 5 without any remainder
+    if (x % 7 == 0) and (x % 5 == 0):
+        # If the conditions are met, convert the number to a string and append it to the list
+        nl.append(str(x))
+# Join the numbers in the list with a comma and print the result
+print(','.join(nl))
+        </pre>
+    </div>
+    <h2>Sample Test Cases:</h2>
+    <div class="test-case">
+        <p class="input">Input: </p>
+        <p class="output">Output:</p>
+        <div class="code">
+            <pre>
+1505,1540,1575,1610,1645,1680,1715,1750,1785,1820,1855,1890,1925,1960,1995,2030,2065,2100,2135,2170,2205,2240,2275,2310,2345,2380,2415,2450,2485,2520,2555,2590,2625,2660,2695
+            </pre>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vowel or Consonant Checker</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+        background-color: #f2f2f2;
+    }
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+        color: #333;
+        text-align: center;
+    }
+    p {
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
+    .code {
+        background-color: #f9f9f9;
+        padding: 10px;
+        border-radius: 5px;
+        overflow-x: auto;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>Vowel or Consonant Checker</h1>
+    <p>
+        Write a Python program to check whether an alphabet is a vowel or consonant.
+    </p>
+    <div class="code">
+        <pre>
+# Request input from the user to input a letter of the alphabet and assign it to the variable 'l'
+l = input("Input a letter of the alphabet: ")
+
+# Check if the input letter 'l' is present in the tuple containing vowels ('a', 'e', 'i', 'o', 'u')
+if l in ('a', 'e', 'i', 'o', 'u'):
+    print("%s is a vowel." % l)  # Display a message stating that the input letter is a vowel
+# If the input letter is 'y', display a message stating that it sometimes represents a vowel and sometimes a consonant
+elif l == 'y':
+    print("Sometimes the letter y stands for a vowel, sometimes for a consonant.")
+# If the input letter doesn't fall into any of the above conditions, it is considered a consonant; display a message stating so
+else:
+    print("%s is a consonant." % l) 
+        </pre>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Printing Numbers with Exceptions</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+        background-color: #f2f2f2;
+    }
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+        color: #333;
+        text-align: center;
+    }
+    p {
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
+    .code {
+        background-color: #f9f9f9;
+        padding: 10px;
+        border-radius: 5px;
+        overflow-x: auto;
+    }
+    .test-case {
+        margin-bottom: 10px;
+    }
+    .input {
+        font-weight: bold;
+        color: #007bff;
+    }
+    .output {
+        font-weight: bold;
+        color: #28a745;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>Printing Numbers with Exceptions</h1>
+    <p>
+        Write a Python program that prints all the numbers from 0 to 6 except 3 and 6.
+    </p>
+    <div class="code">
+        <pre>
+# Iterate through numbers from 0 to 5 using the range function
+for x in range(6):
+    # Check if the current value of 'x' is equal to 3 or 6
+    if (x == 3 or x == 6):
+        # If 'x' is 3 or 6, skip to the next iteration without executing the code below
+        continue
+    # Print the value of 'x' with a space and without a newline (end=' ')
+    print(x, end=' ')
+
+# Print a new line after printing all numbers satisfying the condition
+print("\n")
+        </pre>
+    </div>
+    <h2>Sample Test Cases:</h2>
+    <div class="test-case">
+        <p class="input">Input: N/A</p>
+        <p class="output">Output: 0 1 2 4 5 </p>
+    </div>
+    <!-- Placeholder for additional test cases -->
+</div>
+</body>
+</html>

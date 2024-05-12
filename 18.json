@@ -1,0 +1,24 @@
+{
+    "data": [
+        {
+            "input": "February",
+            "output": "No. of days: 28/29 days"
+        },
+        {
+            "input": "April",
+            "output": "No. of days: 30 days"
+        },
+        {
+            "input": "September",
+            "output": "No. of days: 30 days"
+        },
+        {
+            "input": "November",
+            "output": "No. of days: 30 days"
+        },
+        {
+            "input": "May",
+            "output": "No. of days: 31 days"
+        }
+    ]
+}

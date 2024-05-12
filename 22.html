@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Median of Three Values</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+        background-color: #f2f2f2;
+    }
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+        color: #333;
+        text-align: center;
+    }
+    p {
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
+    .code {
+        background-color: #f9f9f9;
+        padding: 10px;
+        border-radius: 5px;
+        overflow-x: auto;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>Median of Three Values</h1>
+    <p>
+        Write a Python program to find the median of three values.
+    </p>
+    <div class="code">
+        <pre>
+# Prompt the user to input the first number and convert it to a floating-point number, assigning it to the variable 'a'
+a = float(input("Input first number: "))
+
+# Prompt the user to input the second number and convert it to a floating-point number, assigning it to the variable 'b'
+b = float(input("Input second number: "))
+
+# Prompt the user to input the third number and convert it to a floating-point number, assigning it to the variable 'c'
+c = float(input("Input third number: "))
+
+# Determine the median among the three numbers
+
+# Check if 'a' is greater than 'b'
+if a > b:
+    # Check if 'a' is less than 'c'
+    if a < c:
+        median = a
+    # Check if 'b' is greater than 'c'
+    elif b > c:
+        median = b
+    else:
+        median = c
+# If 'a' is not greater than 'b'
+else:
+    # Check if 'a' is greater than 'c'
+    if a > c:
+        median = a
+    # Check if 'b' is less than 'c'
+    elif b < c:
+        median = b
+    else:
+        median = c
+
+# Display the calculated median among the three input numbers
+print("The median is", median)
+        </pre>
+    </div>
+</div>
+</body>
+</html>

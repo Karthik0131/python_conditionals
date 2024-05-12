@@ -1,0 +1,20 @@
+{
+    "data":[
+        {
+            "input": "5 (User guesses 5)",
+            "output": "Well guessed!"
+        },
+        {
+            "input": "3 (User guesses 7), 7 (User guesses 7)",
+            "output": "Well guessed!"
+        },
+        {
+            "input": "1 (User guesses 2), 2 (User guesses 2)",
+            "output": "Well guessed!"
+        },
+        {
+            "input": "9 (User guesses 1), 4 (User guesses 4)",
+            "output": "Well guessed!"
+        }
+    ]
+}

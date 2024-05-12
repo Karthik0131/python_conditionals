@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dog's Age Calculator</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+        background-color: #f2f2f2;
+    }
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+        color: #333;
+        text-align: center;
+    }
+    p {
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
+    .code {
+        background-color: #f9f9f9;
+        padding: 10px;
+        border-radius: 5px;
+        overflow-x: auto;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>Dog's Age Calculator</h1>
+    <p>
+        Write a Python program to calculate a dog's age in dog years.
+        <br>Note: For the first two years, a dog year is equal to 10.5 human years. After that, each dog year equals 4 human years.
+    </p>
+    <div class="code">
+        <pre>
+# Request input from the user to provide a dog's age in human years and convert it to an integer
+h_age = int(input("Input a dog's age in human years: "))
+
+# Check if the entered age is less than zero; if true, display an error message and exit the program
+if h_age &lt; 0:
+    print("Age must be a positive number.")
+    exit()
+# If the entered age is 2 years or less, calculate the dog's age in dog's years using the formula 10.5 times the human years
+elif h_age &lt;= 2:
+    d_age = h_age * 10.5
+# For ages greater than 2, calculate the dog's age in dog's years using the formula 21 plus 4 times the remaining human years after 2
+else:
+    d_age = 21 + (h_age - 2) * 4
+
+# Display the calculated dog's age in dog's years
+print("The dog's age in dog's years is", d_age)
+        </pre>
+    </div>
+</div>
+</body>
+</html>

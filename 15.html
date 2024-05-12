@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Password Validator</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+        background-color: #f2f2f2;
+    }
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+        color: #333;
+        text-align: center;
+    }
+    p {
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
+    .code {
+        background-color: #f9f9f9;
+        padding: 10px;
+        border-radius: 5px;
+        overflow-x: auto;
+    }
+    .test-case {
+        margin-bottom: 10px;
+    }
+    .input {
+        font-weight: bold;
+        color: #007bff;
+    }
+    .output {
+        font-weight: bold;
+        color: #28a745;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>Password Validator</h1>
+    <p>
+        Write a Python program to check the validity of passwords input by users.
+        <br>Validation rules:
+        <ul>
+            <li>At least 1 lowercase letter (a-z) and 1 uppercase letter (A-Z)</li>
+            <li>At least 1 digit (0-9)</li>
+            <li>At least 1 special character from [$#@]</li>
+            <li>Minimum length: 6 characters</li>
+            <li>Maximum length: 16 characters</li>
+        </ul>
+    </p>
+    <div class="code">
+        <pre>
+# Import the 're' module for regular expressions
+import re
+
+# Prompt the user to input a password and store it in the variable 'p'
+p = input("Input your password")
+
+# Set 'x' to True to enter the while loop
+x = True
+
+# Start a while loop that continues until 'x' is True
+while x:  
+    # Check conditions for a valid password:
+    # Password length should be between 6 and 16 characters
+    if (len(p) < 6 or len(p) > 16):
+        break
+    # Password should contain at least one lowercase letter
+    elif not re.search("[a-z]", p):
+        break
+    # Password should contain at least one digit
+    elif not re.search("[0-9]", p):
+        break
+    # Password should contain at least one uppercase letter
+    elif not re.search("[A-Z]", p):
+        break
+    # Password should contain at least one special character among '$', '#', '@'
+    elif not re.search("[$#@]", p):
+        break
+    else:
+        # If all conditions are met, print "Valid Password" and set 'x' to False to exit the loop
+        print("Valid Password")
+        x = False
+        break
+
+# If 'x' remains True, print "Not a Valid Password"
+if x:
+    print("Not a Valid Password")
+        </pre>
+    </div>
+    <h2>Sample Test Cases:</h2>
+    <!-- Placeholder for test cases -->
+</div>
+</body>
+</html>

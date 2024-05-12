@@ -1,0 +1,20 @@
+{
+    "data":[
+        {
+            "input": "hello",
+            "output": "olleh"
+        },
+        {
+            "input": "world",
+            "output": "dlrow"
+        },
+        {
+            "input": "python",
+            "output": "nohtyp"
+        },
+        {
+            "input": "racecar",
+            "output": "racecar"
+        }
+    ]
+}
